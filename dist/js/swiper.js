@@ -2654,7 +2654,7 @@
       ) {
         doc.activeElement.blur();
       }
-      if (preventDefault && swiper.allowTouchMove) {
+      if (preventDefault && swiper.allowTouchMove && (Device.ios || Device.android)) {
         e.preventDefault();
       }
     }
